@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct Book_Barcode_ScannerApp: App {
+    let persistenceController = PersistenceController.shared
+    var bookManager: BookManager {
+        BookManager(context: persistenceController.container.viewContext)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookCategoryListView(viewModel: BookCategoryListViewModel())
+                .environmentObject(bookManager)
         }
     }
 }

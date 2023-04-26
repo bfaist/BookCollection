@@ -1,14 +1,13 @@
 //
-//  Book_Barcode_ScannerTests.swift
+//  BookCategoryListViewModelTests.swift
 //  Book Barcode ScannerTests
 //
-//  Created by Robert Faist on 3/9/23.
+//  Created by Robert Faist on 4/25/23.
 //
 
 import XCTest
-@testable import Book_Barcode_Scanner
 
-final class Book_Barcode_ScannerTests: XCTestCase {
+final class BookCategoryListViewModelTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
