@@ -12,3 +12,11 @@ This project started as a reason to learn CoreData and SwiftUI.
 ## TO DO
 - Complete unit tests
 - UI redesign
+
+## Screenshots
+
+![scan 1](./screenshots/book_collection_scanned_book.png)
+![scan 2](./screenshots/book_collection_scanned_book2.png)
+![category name list](./screenshots/book_collection_category_name_list.png)
+![category book list](./screenshots/book_collection_category_book_list.png)
+![book detail](./screenshots/book_collection_book_detail.png)
