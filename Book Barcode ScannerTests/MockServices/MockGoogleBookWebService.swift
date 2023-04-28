@@ -20,7 +20,9 @@ class MockGoogleBookWebService: GoogleBookWebService {
             throw apiError
         }
         
-        guard let jsonURL = Bundle.main.url(forResource: mockJSONFile, withExtension: "json") else {
+        let bundle = Bundle(for: type(of: self))
+        
+        guard let jsonURL = bundle.url(forResource: mockJSONFile, withExtension: "json") else {
             throw BookAPIError.invalidURL
         }
         

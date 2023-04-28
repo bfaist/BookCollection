@@ -7,7 +7,6 @@
 
 import Foundation
 
-@MainActor
 class BookDetailViewModel: ObservableObject {
     @Published var bookEntry: BookEntry
     

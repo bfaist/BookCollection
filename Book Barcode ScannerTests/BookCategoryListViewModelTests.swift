@@ -6,30 +6,21 @@
 //
 
 import XCTest
+@testable import Book_Barcode_Scanner
 
 final class BookCategoryListViewModelTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_title() {
+        let sut = BookCategoryListViewModel()
+        
+        XCTAssertEqual("Book Collection", sut.navigationTitle)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_scanned_barcode() {
+        let sut = BookCategoryListViewModel()
+        
+        sut.scannedBook(isbn: "1234567890")
+        
+        XCTAssertEqual("1234567890", sut.scannedBarcode)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

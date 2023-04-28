@@ -1,7 +1,7 @@
 # Book Collection
 
 ## Overview
-This project started as a reason to learn CoreData and SwiftUI.
+This project started as an attempt to learn CoreData and SwiftUI.
 
 ## Components
 - CoreData
@@ -10,7 +10,6 @@ This project started as a reason to learn CoreData and SwiftUI.
 - [Google Book Web Service API](https://developers.google.com/books/docs/v1/using#PerformingSearch)
 
 ## TO DO
-- Complete unit tests
 - UI redesign
 
 ## Screenshots
